@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wild Petal Design offers botanical styling and interior plant design for homes and businesses." />
+  <title>Wild Petal Collective | Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Wild Petal Collective</a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="is-active" href="design.html">Design</a></li>
+          <li><a href="talismans.html">Talismans</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-short">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Wild Petal Design</p>
+          <h1>Living design for spaces that want to be felt.</h1>
+          <p class="lede">Botanical styling and plant design for homes, offices, studios, and local businesses.</p>
+          <a class="btn btn-gold" href="#design-leads">Request a Consult</a>
+        </div>
+        <figure class="hero-image-card">
+          <img src="assets/images/design-hero-placeholder.jpg" alt="Elegant interior styled with plants, dark walls, and natural light" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What We Do</h2>
+        <div class="cards-grid two">
+          <article class="card"><h3>Plant Styling &amp; Placement</h3><p>Thoughtful selection and placement based on light, space, texture, and mood.</p></article>
+          <article class="card"><h3>Interior Plant Design</h3><p>Botanical design plans for homes, offices, restaurants, salons, and boutique spaces.</p></article>
+          <article class="card"><h3>Plant Remodels</h3><p>A refresh for spaces that already have plants but need better flow, styling, or cohesion.</p></article>
+          <article class="card"><h3>Ongoing Maintenance</h3><p>Care plans to keep plants healthy, polished, and integrated into the space.</p></article>
+          <article class="card"><h3>Seasonal Botanical Touches</h3><p>Rotating natural elements, vessels, branches, florals, and seasonal accents.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <h2>Ideal Spaces</h2>
+        <ul class="pill-list" aria-label="Ideal spaces list">
+          <li>Homes</li><li>Offices</li><li>Restaurants</li><li>Salons</li><li>Studios</li><li>Boutiques</li><li>Wellness Spaces</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Philosophy</h2>
+        <p>We design with the plant, the room, and the feeling of the space in mind.</p>
+        <p>Wild Petal Design is not just about adding greenery. It is about shaping atmosphere—creating rooms that feel alive, intentional, and quietly luxurious.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Process</h2>
+        <ol class="process-list">
+          <li><strong>Consult</strong><span>We learn your space, light, needs, and aesthetic.</span></li>
+          <li><strong>Design</strong><span>We recommend plants, vessels, placement, and styling direction.</span></li>
+          <li><strong>Install</strong><span>We place and style everything with attention to flow and visual balance.</span></li>
+          <li><strong>Maintain</strong><span>Optional recurring care keeps the space thriving.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="design-leads" class="section cta-band">
+      <div class="container">
+        <h2>Bring your space to life.</h2>
+        <p>Share your email to request a consult and receive design availability updates.</p>
+        <form class="waitlist-form" action="https://formspree.io/f/your-design-form-id" method="POST">
+          <label for="design-email">Email</label>
+          <input id="design-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+          <input type="hidden" name="list_type" value="design_leads" />
+          <button class="btn btn-gold" type="submit">Request a Consult</button>
+        </form>
+        <p class="form-note">Replace the placeholder form endpoint with your Design list endpoint.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand">Wild Petal Collective</p>
+        <p>Gardnerville / Reno / Sierra Nevada</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#design-leads">Consult</a></li>
+        <li><a href="talismans.html">Talismans</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

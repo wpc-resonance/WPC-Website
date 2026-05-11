@@ -7,7 +7,7 @@
   <title>Wild Petal Collective | Design</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="theme-light" data-page="design">
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">Wild Petal Collective</a>
@@ -16,6 +16,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a class="is-active" href="design.html">Design</a></li>
           <li><a href="talismans.html">Talismans</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -26,12 +28,12 @@
       <div class="container hero-grid">
         <div>
           <p class="eyebrow">Wild Petal Design</p>
-          <h1>Living design for spaces that want to be felt.</h1>
+          <h1>Botanical interiors, thoughtfully composed.</h1>
           <p class="lede">Botanical styling and plant design for homes, offices, studios, and local businesses.</p>
           <a class="btn btn-gold" href="#design-leads">Request a Consult</a>
         </div>
         <figure class="hero-image-card">
-          <img src="assets/images/design-hero-placeholder.jpg" alt="Elegant interior styled with plants, dark walls, and natural light" />
+          <img src="Home Page/Design-image.png" alt="Elegant interior styled with plants, dark walls, and natural light" />
         </figure>
       </div>
     </section>
@@ -41,7 +43,6 @@
         <h2>What We Do</h2>
         <div class="cards-grid two">
           <article class="card"><h3>Plant Styling &amp; Placement</h3><p>Thoughtful selection and placement based on light, space, texture, and mood.</p></article>
-          <article class="card"><h3>Interior Plant Design</h3><p>Botanical design plans for homes, offices, restaurants, salons, and boutique spaces.</p></article>
           <article class="card"><h3>Plant Remodels</h3><p>A refresh for spaces that already have plants but need better flow, styling, or cohesion.</p></article>
           <article class="card"><h3>Ongoing Maintenance</h3><p>Care plans to keep plants healthy, polished, and integrated into the space.</p></article>
           <article class="card"><h3>Seasonal Botanical Touches</h3><p>Rotating natural elements, vessels, branches, florals, and seasonal accents.</p></article>
@@ -80,15 +81,165 @@
 
     <section id="design-leads" class="section cta-band">
       <div class="container">
-        <h2>Bring your space to life.</h2>
-        <p>Share your email to request a consult and receive design availability updates.</p>
-        <form class="waitlist-form" action="https://formspree.io/f/your-design-form-id" method="POST">
-          <label for="design-email">Email</label>
-          <input id="design-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-          <input type="hidden" name="list_type" value="design_leads" />
-          <button class="btn btn-gold" type="submit">Request a Consult</button>
-        </form>
-        <p class="form-note">Replace the placeholder form endpoint with your Design list endpoint.</p>
+        <h2>Let’s get started</h2>
+        <p>Select one option below to open the right form.</p>
+
+        <div class="lead-toggle-row" role="group" aria-label="Choose request type">
+          <button class="btn btn-outline js-lead-toggle" type="button" data-target="consult-form-card" aria-expanded="false">Request Consult</button>
+          <button class="btn btn-outline js-lead-toggle" type="button" data-target="order-form-card" aria-expanded="false">Build Order</button>
+        </div>
+
+        <div class="cards-grid two form-grid">
+          <article id="consult-form-card" class="card form-card is-hidden">
+            <h3>Consultation Request</h3>
+            <form class="waitlist-form js-ajax-form js-design-intake-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSeZqFF7d-643cBNhT67wsOKfm2ACUxQZBTDixWQKmT9geyZqg/formResponse"
+              method="POST"
+              data-success-message="Consultation request submitted.">
+              <input type="text" name="company" tabindex="-1" autocomplete="off" class="trap-field" aria-hidden="true" />
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="trap-field" aria-hidden="true" />
+
+              <label for="consult-name">Full Name</label>
+              <input id="consult-name" name="contact_name" type="text" autocomplete="name" required placeholder="Jane Doe" />
+
+              <label for="consult-email">Email</label>
+              <input id="consult-email" name="entry.103622328" type="email" autocomplete="email" required placeholder="you@example.com" />
+
+              <label for="consult-phone">Phone</label>
+              <input id="consult-phone" name="contact_phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555" />
+
+              <label for="consult-space-type">Space Type</label>
+              <select id="consult-space-type" name="space_type" required>
+                <option value="">Select one</option>
+                <option>Home</option>
+                <option>Office</option>
+                <option>Restaurant</option>
+                <option>Salon</option>
+                <option>Studio</option>
+                <option>Boutique</option>
+                <option>Wellness Space</option>
+                <option>Other</option>
+              </select>
+
+              <label for="consult-goals">Project Goals / Notes</label>
+              <textarea id="consult-goals" name="project_goals" rows="4" placeholder="Tell us what you want your space to feel like, any timing needs, and budget notes."></textarea>
+
+              <label for="consult-distributor">Preferred Distributor (if known)</label>
+              <select id="consult-distributor" name="distributor_primary">
+                <option value="">Not sure yet</option>
+                <option>Local nursery</option>
+                <option>Wholesale grower</option>
+                <option>Boutique supplier</option>
+                <option>Designer recommendation</option>
+              </select>
+
+              <label for="consult-distributor-backup">Backup Distributor Option</label>
+              <input id="consult-distributor-backup" name="distributor_backup" type="text" placeholder="Optional backup source" />
+
+              <label class="checkbox-row" for="consult-disclaimer">
+                <input id="consult-disclaimer" name="disclaimer_ack" type="checkbox" required />
+                <span>I understand plant availability, pricing, and installation timing are estimates until confirmed in writing by Wild Petal Collective.</span>
+              </label>
+
+              <label class="checkbox-row" for="consult-consent">
+                <input id="consult-consent" name="contact_consent" type="checkbox" required />
+                <span>I consent to being contacted by email/phone about this request and coordination details.</span>
+              </label>
+
+              <input type="hidden" name="entry.2023600763" value="" data-summary-field />
+              <input type="hidden" name="lead_type" value="consultation" data-lead-type />
+
+              <button class="btn btn-gold" type="submit">Submit Consultation Request</button>
+              <p class="form-success is-hidden" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+
+          <article id="order-form-card" class="card form-card is-hidden">
+            <h3>Design Order Request</h3>
+            <form class="waitlist-form js-ajax-form js-design-intake-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSeZqFF7d-643cBNhT67wsOKfm2ACUxQZBTDixWQKmT9geyZqg/formResponse"
+              method="POST"
+              data-success-message="Order request submitted.">
+              <input type="text" name="company" tabindex="-1" autocomplete="off" class="trap-field" aria-hidden="true" />
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="trap-field" aria-hidden="true" />
+
+              <label for="order-name">Full Name</label>
+              <input id="order-name" name="contact_name" type="text" autocomplete="name" required placeholder="Jane Doe" />
+
+              <label for="order-email">Email</label>
+              <input id="order-email" name="entry.103622328" type="email" autocomplete="email" required placeholder="you@example.com" />
+
+              <label for="order-phone">Phone</label>
+              <input id="order-phone" name="contact_phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555" />
+
+              <label for="order-type">Order Type</label>
+              <select id="order-type" name="order_type" required>
+                <option value="">Select one</option>
+                <option>Plant Styling & Placement</option>
+                <option>Interior Plant Design</option>
+                <option>Plant Remodel</option>
+                <option>Maintenance Plan</option>
+                <option>Seasonal Botanical Touches</option>
+                <option>Custom Package</option>
+              </select>
+
+              <label for="order-frequency">Order Frequency</label>
+              <select id="order-frequency" name="order_frequency" required>
+                <option value="">Select one</option>
+                <option>One-time order</option>
+                <option>Weekly recurring order</option>
+                <option>Biweekly recurring order</option>
+                <option>Monthly recurring order</option>
+                <option>Custom recurring cadence</option>
+              </select>
+
+              <label for="order-start-date">Preferred Start Date</label>
+              <input id="order-start-date" name="order_start_date" type="date" />
+
+              <label for="order-end-date">Recurring End Date (optional)</label>
+              <input id="order-end-date" name="order_end_date" type="date" />
+
+              <label for="order-recurring-notes">Recurring Schedule Notes (optional)</label>
+              <textarea id="order-recurring-notes" name="recurring_schedule_notes" rows="3" placeholder="Example: Every Tuesday morning, skip holiday weeks, confirm inventory 48 hours before delivery."></textarea>
+
+              <label for="order-description">Order Description</label>
+              <textarea id="order-description" name="order_description" rows="4" required placeholder="Describe quantities, style, preferred plants, vessel details, and timeline."></textarea>
+
+              <label for="order-distributor">Preferred Distributor (if known)</label>
+              <select id="order-distributor" name="distributor_primary">
+                <option value="">Not sure yet</option>
+                <option>Local nursery</option>
+                <option>Wholesale grower</option>
+                <option>Boutique supplier</option>
+                <option>Designer recommendation</option>
+              </select>
+
+              <label for="order-distributor-backup">Backup Distributor Option</label>
+              <input id="order-distributor-backup" name="distributor_backup" type="text" placeholder="Optional backup source" />
+
+              <label for="order-prefill-notes">Internal Coordination Notes (optional)</label>
+              <textarea id="order-prefill-notes" name="internal_notes" rows="3" placeholder="Anything that helps us prepare distributor prefilled order sheets."></textarea>
+
+              <label class="checkbox-row" for="order-disclaimer">
+                <input id="order-disclaimer" name="disclaimer_ack" type="checkbox" required />
+                <span>I understand this submission is a request/quote and is not a final confirmed order until approved by Wild Petal Collective.</span>
+              </label>
+
+              <label class="checkbox-row" for="order-consent">
+                <input id="order-consent" name="contact_consent" type="checkbox" required />
+                <span>I authorize Wild Petal Collective to use this information for planning, sourcing, and distributor coordination.</span>
+              </label>
+
+              <input type="hidden" name="entry.2023600763" value="" data-summary-field />
+              <input type="hidden" name="lead_type" value="order" data-lead-type />
+
+              <button class="btn btn-gold" type="submit">Submit Order Request</button>
+              <p class="form-success is-hidden" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+
+        <p class="form-note">After you submit, we’ll review your request and follow up with next steps.</p>
       </div>
     </section>
   </main>
@@ -97,7 +248,7 @@
     <div class="container footer-grid">
       <div>
         <p class="brand">Wild Petal Collective</p>
-        <p>Gardnerville / Reno / Sierra Nevada</p>
+        <p>Gardnerville, Nevada | Sierra Nevada</p>
       </div>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
@@ -106,5 +257,104 @@
       </ul>
     </div>
   </footer>
+  <script>
+    (function () {
+      function compileFormSummary(form) {
+        var pairs = [];
+        var leadTypeEl = form.querySelector('[data-lead-type]');
+        if (leadTypeEl && leadTypeEl.value) {
+          pairs.push('Lead Type: ' + leadTypeEl.value);
+        }
+        var fields = form.querySelectorAll('input, select, textarea');
+        fields.forEach(function (field) {
+          if (!field.name || field.type === 'hidden' || field.type === 'submit' || field.classList.contains('trap-field')) {
+            return;
+          }
+          if ((field.type === 'checkbox' || field.type === 'radio') && !field.checked) {
+            return;
+          }
+          var labelEl = form.querySelector('label[for="' + field.id + '"]');
+          var label = labelEl ? labelEl.textContent.trim() : field.name;
+          var value = field.type === 'checkbox' ? 'Yes' : field.value.trim();
+          if (!value) {
+            return;
+          }
+          pairs.push(label + ': ' + value);
+        });
+        return pairs.join(' | ');
+      }
+
+      var ajaxForms = document.querySelectorAll('.js-ajax-form');
+      ajaxForms.forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var summaryField = form.querySelector('[data-summary-field]');
+          if (summaryField) {
+            summaryField.value = compileFormSummary(form);
+          }
+          var successEl = form.querySelector('.form-success');
+          var button = form.querySelector('button[type="submit"]');
+          var originalButtonText = button ? button.textContent : 'Submit';
+          if (successEl) {
+            successEl.classList.add('is-hidden');
+            successEl.textContent = '';
+          }
+          if (button) {
+            button.disabled = true;
+            button.textContent = 'Submitting...';
+          }
+
+          fetch(form.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: new FormData(form)
+          }).then(function () {
+            form.reset();
+            if (successEl) {
+              successEl.textContent = form.dataset.successMessage || 'Thanks — your submission was received.';
+              successEl.classList.remove('is-hidden');
+            }
+          }).catch(function () {
+            if (successEl) {
+              successEl.textContent = 'Something went wrong. Please try again in a moment.';
+              successEl.classList.remove('is-hidden');
+            }
+          }).finally(function () {
+            if (button) {
+              button.disabled = false;
+              button.textContent = originalButtonText;
+            }
+          });
+        });
+      });
+
+      var leadToggles = document.querySelectorAll('.js-lead-toggle');
+      var leadCards = {
+        'consult-form-card': document.getElementById('consult-form-card'),
+        'order-form-card': document.getElementById('order-form-card')
+      };
+
+      leadToggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function () {
+          var targetId = toggle.getAttribute('data-target');
+          Object.keys(leadCards).forEach(function (id) {
+            var card = leadCards[id];
+            if (!card) {
+              return;
+            }
+            card.classList.toggle('is-hidden', id !== targetId);
+          });
+
+          leadToggles.forEach(function (btn) {
+            var isCurrent = btn === toggle;
+            btn.setAttribute('aria-expanded', isCurrent ? 'true' : 'false');
+            btn.classList.toggle('btn-gold', isCurrent);
+            btn.classList.toggle('btn-outline', !isCurrent);
+          });
+        });
+      });
+
+    }());
+  </script>
 </body>
 </html>

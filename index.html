@@ -3,119 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wild Petal Collective creates botanical design, living interiors, and symbolic talisman objects inspired by the Sierra landscape." />
+  <meta name="description" content="Wild Petal Collective creates botanical environments and personal talismans shaped by nature, time, and quiet return." />
   <title>Wild Petal Collective | Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Wild Petal Collective</a>
-      <nav aria-label="Primary">
-        <ul class="nav-list">
-          <li><a class="is-active" href="index.html">Home</a></li>
-          <li><a href="design.html">Design</a></li>
-          <li><a href="talismans.html">Talismans</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Wild Petal Collective</p>
-          <h1>Rooted in nature. Designed to be felt.</h1>
-          <p class="lede">Botanical design, living interiors, and symbolic objects inspired by the Sierra landscape.</p>
-          <div class="button-row">
-            <a class="btn btn-gold" href="design.html">Explore Design</a>
-            <a class="btn btn-outline" href="talismans.html">View Talismans</a>
-          </div>
+<body class="theme-light" data-page="home">
+  <main class="home-page">
+    <section class="home-hero-editorial" aria-labelledby="home-hero-title">
+      <header class="home-header">
+        <div class="home-brand-stack" aria-label="Wild Petal Collective">
+          <span class="home-brand-mark" aria-hidden="true">WPC</span>
+          <a class="home-brand-text" href="index.html">WILD PETAL COLLECTIVE</a>
         </div>
-        <figure class="hero-image-card">
-          <img src="assets/images/home-hero-placeholder.jpg" alt="Sierra-inspired botanical scene in dark luxury styling" />
-        </figure>
-      </div>
-    </section>
+        <nav class="home-nav" aria-label="Primary">
+          <ul>
+            <li><a class="is-active" href="index.html">HOME</a></li>
+            <li><a href="design.html">DESIGN</a></li>
+            <li><a href="talismans.html">TALISMANS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <section class="section">
-      <div class="container">
-        <h2>Brand Pillars</h2>
-        <div class="cards-grid four">
-          <article class="card">
-            <h3>Botanical Design</h3>
-            <p>Refined plant styling for homes, offices, and meaningful spaces.</p>
-          </article>
-          <article class="card">
-            <h3>Living Interiors</h3>
-            <p>Spaces shaped with greenery, texture, and atmosphere.</p>
-          </article>
-          <article class="card">
-            <h3>Talisman Objects</h3>
-            <p>Wearable pieces rooted in reflection, time, and personal resonance.</p>
-          </article>
-          <article class="card">
-            <h3>Sierra Inspiration</h3>
-            <p>A local sensibility drawn from mountain light, sagebrush, stone, and wild growth.</p>
-          </article>
+      <div class="hero-center-copy">
+        <h1 id="home-hero-title">Living environments.<br>Personal talismans.</h1>
+        <p>Botanical design and personal pieces<br>shaped by nature, time, and quiet return.</p>
+        <div class="home-hero-actions">
+          <a class="home-btn home-btn-warm" href="design.html">Explore Design</a>
+          <a class="home-btn home-btn-dark" href="talismans.html">Explore Talismans</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted">
-      <div class="container narrow">
-        <h2>About</h2>
-        <p>
-          Wild Petal Collective is a nature-rooted design studio creating botanical spaces and symbolic objects for people who want beauty with depth.
-          Based near the Sierra Nevada, the collective blends plant styling, natural materials, and artful ritual into work that feels both grounded and elevated.
-        </p>
+    <section class="home-split-cards" aria-label="Wild Petal pathways">
+      <article class="split-card split-card-design">
+        <img class="split-card-photo" src="assets/home/home-card-wild-petal-design.png" alt="Warm interior with curated plants for Wild Petal Design" />
+        <div class="split-card-overlay no-title">
+          <span class="split-card-icon" aria-hidden="true">❦</span>
+          <a href="design.html">VIEW DESIGN →</a>
+        </div>
+      </article>
+
+      <article class="split-card split-card-talismans">
+        <img class="split-card-photo" src="assets/home/home-card-wild-petal-talismans.png" alt="Golden talisman on dark stone for Wild Petal Talismans" />
+        <div class="split-card-overlay no-title">
+          <a href="talismans.html">VIEW TALISMANS →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="home-philosophy" aria-labelledby="home-philosophy-title">
+      <div class="home-philosophy-inner">
+        <h2 id="home-philosophy-title">What surrounds you. What stays with you.</h2>
+        <div class="home-philosophy-divider" aria-hidden="true"></div>
+        <p>Some things shape a space.<br>Some things bring you back to yourself.</p>
+        <p>Wild Petal Collective exists between the two—<br>creating botanical environments and personal talismans<br>that evolve quietly over time.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Explore</h2>
-        <div class="cards-grid two">
-          <article class="card card-cta">
-            <h3>Design</h3>
-            <p>Living botanical interiors for homes and businesses.</p>
-            <a class="btn btn-gold" href="design.html">Explore Design</a>
-          </article>
-          <article class="card card-cta">
-            <h3>Talismans</h3>
-            <p>Wearable objects for reflection, presence, and personal rhythm.</p>
-            <a class="btn btn-gold" href="talismans.html">Explore Talismans</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-band">
-      <div class="container cta-band-inner">
-        <div>
-          <h2>Wild beauty, thoughtfully composed.</h2>
-          <p>Explore the collection and join the first wave of inquiries and waitlist interest.</p>
-        </div>
-        <div class="button-row">
-          <a class="btn btn-gold" href="design.html#design-leads">Explore the collection</a>
-          <a class="btn btn-outline" href="talismans.html#talismans-waitlist">Join the waitlist</a>
-        </div>
+    <section class="home-pillars" aria-labelledby="home-pillars-title">
+      <div class="home-pillars-icons" aria-hidden="true"></div>
+      <h2 id="home-pillars-title" class="home-pillars-heading">Foundations</h2>
+      <div class="home-pillars-grid">
+        <article class="pillar">
+          <span class="pillar-icon" aria-hidden="true">⌒</span>
+          <h3>BOTANICAL</h3>
+          <p>Designed environments<br>that settle naturally<br>into a space.</p>
+        </article>
+        <article class="pillar">
+          <span class="pillar-icon" aria-hidden="true">⟡</span>
+          <h3>PERSONAL</h3>
+          <p>Talismans made to be<br>touched, carried,<br>and quietly kept.</p>
+        </article>
+        <article class="pillar">
+          <span class="pillar-icon" aria-hidden="true">◎</span>
+          <h3>EVOLVING</h3>
+          <p>Shaped through time,<br>presence, and return.</p>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <p class="brand">Wild Petal Collective</p>
-        <p>Gardnerville / Reno / Sierra Nevada</p>
-      </div>
-      <ul class="footer-links">
-        <li><a href="design.html#design-leads">Contact</a></li>
-        <li><a href="talismans.html#talismans-waitlist">Waitlist</a></li>
-        <li><a href="#" aria-label="Instagram placeholder link">Instagram</a></li>
-      </ul>
+  <footer id="contact" class="home-footer">
+    <div class="home-footer-overlay">
+      <span class="home-footer-flower" aria-hidden="true">✶</span>
+      <p class="home-footer-brand">WILD PETAL COLLECTIVE</p>
+      <p class="home-footer-location">GARDNERVILLE, NEVADA</p>
     </div>
   </footer>
 </body>

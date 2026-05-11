@@ -3,149 +3,251 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Wild Petal Talismans are symbolic wearable objects for quiet check-ins, reflection, and personal rhythm." />
+  <meta name="description" content="Wild Petal Talismans are personal objects shaped by time, touch, and quiet reflection." />
   <title>Wild Petal Collective | Talismans</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">Wild Petal Collective</a>
+<body data-page="talismans" class="theme-dark">
+  <header class="site-header tal-header">
+    <div class="container tal-nav-wrap">
+      <a class="brand tal-brand" href="index.html">Wild Petal Collective</a>
       <nav aria-label="Primary">
-        <ul class="nav-list">
+        <ul class="nav-list tal-nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="design.html">Design</a></li>
-          <li><a class="is-active" href="talismans.html">Talismans</a></li>
+          <li><a class="is-active" href="talismans.html" aria-current="page">Talismans</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <button id="tal-theme-toggle" class="btn tal-theme-toggle" type="button" aria-label="Toggle light mode">Light Mode</button>
     </div>
   </header>
 
   <main>
-    <section class="hero hero-short">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Wild Petal Talismans</p>
-          <h1>Your rhythm. Your resonance.</h1>
-          <p class="lede">A wearable talisman that lets you check in—and stay.</p>
-          <p>Each ring forms over time, shaped by how long you stay with yourself.</p>
-          <a class="btn btn-gold" href="#talismans-waitlist">Join the Waitlist</a>
+    <section class="section tal-hero" aria-labelledby="tal-hero-title">
+      <div class="container tal-two-col">
+        <div class="tal-copy">
+          <h1 id="tal-hero-title">Shaped by time</h1>
+          <p class="tal-subheading">A talisman you touch to check in and notice where you are between settled and adrift.</p>
+          <p>Over time, rings form like a tree—reflecting time spent with yourself, not scores or screens.</p>
+          <div class="button-row">
+            <a class="btn btn-gold" href="#waitlist">Join the Waitlist</a>
+            <a class="tal-text-link" href="#pieces">Discover the pieces</a>
+          </div>
         </div>
-        <figure class="hero-image-card">
-          <img src="assets/images/talisman-hero-placeholder.jpg" alt="Luxury talisman jewelry concept in gold, wood, and silver" />
+        <figure class="tal-image-wrap">
+          <img src="assets/talismans/elegant_jewelry_and_shadows_in_warmth.png" data-dark-src="assets/talismans/elegant_jewelry_and_shadows_in_warmth.png" data-light-src="assets/mockups/Talisman Page/White Mode/elegant_jewelry_and_shadows_in_warmth.png" alt="Warmly lit jewelry composition with dramatic shadows and metal textures" />
         </figure>
       </div>
     </section>
 
-    <section class="section section-muted">
-      <div class="container narrow">
-        <h2>What It Is</h2>
-        <p>Not a tracker. Not a dashboard. Not another screen.</p>
-        <p>A quiet object you touch to return to yourself.</p>
-        <p>Wild Petal Talismans are wearable pieces designed around gentle signals, tactile rings, and symbolic growth over time.</p>
+    <section class="section tal-section-border" aria-labelledby="what-it-is-title">
+      <div class="container tal-two-col">
+        <figure class="tal-image-wrap">
+          <img src="assets/talismans/timeless_elegance_in_nature_s_details.png" data-dark-src="assets/talismans/timeless_elegance_in_nature_s_details.png" data-light-src="assets/mockups/Talisman Page/White Mode/timeless_elegance_in_nature_s_details.png.png" alt="Jewelry placed among natural textures, suggesting intimacy and touch" />
+        </figure>
+        <div class="tal-copy">
+          <p class="eyebrow">WHAT IT IS</p>
+          <h2 id="what-it-is-title">A personal piece you can touch to check in.</h2>
+          <p class="tal-stacked">No screens.<br />No scores.<br />Nothing to track.</p>
+          <p>Just a quiet object that meets you where you are between settled and adrift.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section tal-centered tal-section-border" aria-labelledby="how-it-works-title">
+      <div class="container tal-narrow">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2 id="how-it-works-title">How It Works</h2>
+        <div class="tal-thin-divider" aria-hidden="true"></div>
+        <figure class="tal-workflow-image">
+          <img src="assets/talismans/elegant_luxury_workflow_breakdown.png" data-dark-src="assets/talismans/elegant_luxury_workflow_breakdown.png" data-light-src="assets/mockups/Talisman Page/White Mode/elegant_luxury_workflow_breakdown.png.png" alt="Editorial workflow diagram of touch, pause, and noticing" />
+        </figure>
+        <div class="tal-flow-copy" aria-label="How it works description">
+          <p>Touch.<br />Pause.<br />Notice.</p>
+          <p>A subtle signal helps you notice your state—<br />settled or adrift.</p>
+          <p>That’s it.</p>
+          <p>No interpretation.<br />No pressure to change anything.</p>
+          <p>Just a moment to return.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tal-section-border" aria-labelledby="time-tangible-title">
+      <div class="container tal-two-col">
+        <figure class="tal-image-wrap">
+          <img src="assets/talismans/elegance_in_details_textured_jewelry_scene.png" data-dark-src="assets/talismans/elegance_in_details_textured_jewelry_scene.png" data-light-src="assets/mockups/Talisman Page/White Mode/elegance_in_details_textured_jewelry_scene.png.png" alt="Textured close-up of jewelry detail that evokes rings and layered time" />
+        </figure>
+        <div class="tal-copy">
+          <p class="eyebrow">TIME, MADE TANGIBLE</p>
+          <h2 id="time-tangible-title">Each piece changes slowly over time.</h2>
+          <p>Like rings on a tree, new layers form<br />through time spent with it.</p>
+          <p>Not from performance.<br />Not from achievement.</p>
+          <p>From staying.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pieces" class="section tal-section-border" aria-labelledby="pieces-title">
       <div class="container">
-        <h2>The Interaction</h2>
-        <p class="interaction-line">Touch → Reflect → Stay</p>
-        <ol class="process-list">
-          <li><strong>Touch</strong><span>Touch your talisman.</span></li>
-          <li><strong>Reflect</strong><span>Receive a subtle haptic response and notice whether you feel open or closed.</span></li>
-          <li><strong>Stay</strong><span>Stay with yourself for a moment; over time, rings form.</span></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container narrow">
-        <h2>Rings Over Time</h2>
-        <p>Like rings on a tree, each layer is earned slowly.</p>
-        <p>The rings are not a score. They are not a mood chart. They are not a performance metric.</p>
-        <p>They are a tactile record of time spent returning to yourself.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Launch Pieces</h2>
-        <div class="cards-grid three">
-          <article class="card">
-            <img class="card-image" src="assets/images/golden-orb-placeholder.jpg" alt="Golden Orb talisman placeholder" />
+        <h2 id="pieces-title">The Pieces</h2>
+        <div class="cards-grid three tal-pieces-grid">
+          <article class="card tal-piece-card">
+            <img class="card-image" src="assets/talismans/golden_pendant_on_dark_surface.png" data-dark-src="assets/talismans/golden_pendant_on_dark_surface.png" data-light-src="assets/mockups/Talisman Page/White Mode/golden_pendant_on_dark_surface.png.png" alt="Golden Orb pendant resting on a dark surface" />
             <h3>Golden Orb</h3>
-            <p><strong>For noticing.</strong></p>
-            <p>A daily anchor for awareness.</p>
+            <p>For noticing.<br />For days when you feel grounded.</p>
           </article>
-          <article class="card">
-            <img class="card-image" src="assets/images/woodwatch-placeholder.jpg" alt="WoodWatch talisman placeholder" />
+          <article class="card tal-piece-card">
+            <img class="card-image" src="assets/talismans/luxurious_brass_watch_on_rustic_surface.png" data-dark-src="assets/talismans/luxurious_brass_watch_on_rustic_surface.png" data-light-src="assets/mockups/Talisman Page/White Mode/luxurious_brass_watch_on_rustic_surface.png.png" alt="WoodWatch piece with warm brass tones on a rustic surface" />
             <h3>WoodWatch</h3>
-            <p><strong>For becoming.</strong></p>
-            <p>Like rings on a tree, your time becomes visible.</p>
+            <p>For becoming.<br />For days when you feel wandering.</p>
           </article>
-          <article class="card">
-            <img class="card-image" src="assets/images/silver-drop-placeholder.jpg" alt="Silver Drop talisman placeholder" />
+          <article class="card tal-piece-card">
+            <img class="card-image" src="assets/talismans/moody_elegance_with_metallic_teardrop_pendant.png" data-dark-src="assets/talismans/moody_elegance_with_metallic_teardrop_pendant.png" data-light-src="assets/mockups/Talisman Page/White Mode/moody_elegance_with_metallic_teardrop_pendant.png.png" alt="Silver Drop metallic pendant styled in a moody, editorial setting" />
             <h3>Silver Drop</h3>
-            <p><strong>For feeling.</strong></p>
-            <p>A fluid reflection of your inner rhythm.</p>
+            <p>For feeling.<br />For the quiet return between the two.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted">
-      <div class="container">
-        <h2>Features at Launch</h2>
-        <ul class="feature-list">
-          <li>Touch check-in</li>
-          <li>Subtle haptic response</li>
-          <li>Open / closed reflection</li>
-          <li>Time-based ring growth</li>
+    <section class="section tal-section-border" aria-labelledby="launch-title">
+      <div class="container tal-narrow">
+        <h2 id="launch-title">At Launch</h2>
+        <ul class="feature-list tal-launch-list">
+          <li>Touch-based check-in</li>
+          <li>Subtle haptic signal</li>
+          <li>Settled / adrift reflection</li>
+          <li>Rings formed over time</li>
           <li>Private, on-device experience</li>
           <li>Natural materials</li>
-          <li>Interchangeable wear styles</li>
+          <li>Multiple ways to wear or carry</li>
         </ul>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2>Who It Is For</h2>
-        <div class="cards-grid three">
-          <article class="card"><h3>Creative Souls</h3><p>Artists, designers, makers, and aesthetic thinkers.</p></article>
-          <article class="card"><h3>Mindful Achievers</h3><p>Busy professionals seeking a quiet way to return to themselves.</p></article>
-          <article class="card"><h3>Conscious Givers</h3><p>People buying meaningful gifts with beauty, depth, and story.</p></article>
+    <section class="section tal-section-border" aria-labelledby="who-for-title">
+      <div class="container tal-two-col">
+        <figure class="tal-image-wrap">
+          <img src="assets/talismans/the_curious_artist_s_workspace.png" data-dark-src="assets/talismans/the_curious_artist_s_workspace.png" data-light-src="assets/mockups/Talisman Page/White Mode/the_curious_artist_s_workspace.png.png" alt="Atmospheric artist workspace with tools, textures, and natural light" />
+        </figure>
+        <div class="tal-copy">
+          <p class="eyebrow">WHO IT’S FOR</p>
+          <h2 id="who-for-title">People who want a quiet way to stay with themselves.</h2>
+          <p>Created for those drawn to beauty, meaning, and presence.</p>
         </div>
       </div>
     </section>
 
-    <section id="talismans-waitlist" class="section cta-band">
-      <div class="container">
-        <h2>Be part of the first release.</h2>
-        <p>A physical reflection of time spent with yourself.</p>
-        <form class="waitlist-form" action="https://formspree.io/f/your-talismans-form-id" method="POST">
+    <section id="waitlist" class="section tal-closing-cta" aria-labelledby="closing-title">
+      <div class="container tal-closing-inner">
+        <p class="eyebrow">CLOSING</p>
+        <h2 id="closing-title">Not to measure time.<br />To stay with it.</h2>
+        <p>Be part of the first release.</p>
+        <form class="waitlist-form js-ajax-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeZqFF7d-643cBNhT67wsOKfm2ACUxQZBTDixWQKmT9geyZqg/formResponse" method="POST" data-success-message="Signed up for waitlist!">
+          <input type="text" name="company" tabindex="-1" autocomplete="off" class="trap-field" aria-hidden="true" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="trap-field" aria-hidden="true" />
           <label for="talismans-email">Email</label>
-          <input id="talismans-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-          <input type="hidden" name="list_type" value="talismans_waitlist" />
+          <input id="talismans-email" name="entry.103622328" type="email" autocomplete="email" required placeholder="you@example.com" />
+          <input type="hidden" name="entry.2023600763" value="talismans_waitlist" />
           <button class="btn btn-gold" type="submit">Join the Waitlist</button>
+          <p class="form-note">By joining, you agree to receive Wild Petal Talismans launch and marketing emails. Unsubscribe anytime.</p>
+          <p class="form-success is-hidden" role="status" aria-live="polite"></p>
         </form>
-        <p class="form-note">Replace the placeholder form endpoint with your Talismans list endpoint.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
+  <footer class="site-footer tal-footer">
+    <div class="container tal-footer-grid">
       <div>
-        <p class="brand">Wild Petal Talismans</p>
-        <p>A branch of Wild Petal Collective</p>
+        <p class="brand tal-brand">Wild Petal Collective</p>
+        <p>Objects and spaces for a life rooted in nature and meaning.</p>
       </div>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
+      <ul class="footer-links tal-footer-links">
         <li><a href="design.html">Design</a></li>
-        <li><a href="#talismans-waitlist">Waitlist</a></li>
+        <li><a href="talismans.html">Talismans</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
+      <div>
+        <p>Gardnerville, Nevada | Sierra Nevada</p>
+      </div>
+      <div>
+        <a class="btn btn-gold" href="#waitlist">Join Waitlist</a>
+      </div>
     </div>
   </footer>
+  <script>
+    (function () {
+      var themeKey = 'wpc-talismans-theme';
+      var themeToggle = document.getElementById('tal-theme-toggle');
+      var body = document.body;
+      var switchableImages = document.querySelectorAll('img[data-dark-src][data-light-src]');
+
+      function applyTalismansTheme(theme) {
+        var isLight = theme === 'theme-light';
+        body.classList.remove('theme-dark', 'theme-light');
+        body.classList.add(isLight ? 'theme-light' : 'theme-dark');
+        if (themeToggle) {
+          themeToggle.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+        }
+        switchableImages.forEach(function (img) {
+          img.src = isLight ? img.dataset.lightSrc : img.dataset.darkSrc;
+        });
+      }
+
+      var savedTheme = localStorage.getItem(themeKey) || 'theme-dark';
+      applyTalismansTheme(savedTheme);
+      if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+          var next = body.classList.contains('theme-dark') ? 'theme-light' : 'theme-dark';
+          localStorage.setItem(themeKey, next);
+          applyTalismansTheme(next);
+        });
+      }
+
+      var ajaxForms = document.querySelectorAll('.js-ajax-form');
+      ajaxForms.forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var successEl = form.querySelector('.form-success');
+          var button = form.querySelector('button[type="submit"]');
+          if (successEl) {
+            successEl.classList.add('is-hidden');
+            successEl.textContent = '';
+          }
+          if (button) {
+            button.disabled = true;
+            button.textContent = 'Submitting...';
+          }
+
+          fetch(form.action, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: new FormData(form)
+          }).then(function () {
+            form.reset();
+            if (successEl) {
+              successEl.textContent = form.dataset.successMessage || 'Thanks — your submission was received.';
+              successEl.classList.remove('is-hidden');
+            }
+          }).catch(function () {
+            if (successEl) {
+              successEl.textContent = 'Something went wrong. Please try again in a moment.';
+              successEl.classList.remove('is-hidden');
+            }
+          }).finally(function () {
+            if (button) {
+              button.disabled = false;
+              button.textContent = 'Join the Waitlist';
+            }
+          });
+        });
+      });
+
+    }());
+  </script>
 </body>
 </html>

@@ -26,7 +26,7 @@ A local sensibility drawn from mountain light, sagebrush, stone, and wild growth
 
 Wild Petal Collective is a nature-rooted design studio creating botanical spaces and symbolic objects for people who want beauty with depth.
 
-Based near the Sierra Nevada, the collective blends plant styling, natural materials, and artful ritual into work that feels both grounded and elevated.
+Based in Gardnerville, Nevada near the Sierra Nevada, the collective blends plant styling, natural materials, and artful ritual into work that feels both grounded and elevated.
 
 ## Navigation Cards
 
@@ -39,4 +39,3 @@ Wearable objects for reflection, presence, and personal rhythm.
 ## CTA
 
 Explore the collection.
-

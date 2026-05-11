@@ -3,13 +3,13 @@
 ## Hero
 
 ### Headline
-Your rhythm. Your resonance.
+A talisman you touch to check in and notice where you are between settled and adrift.
 
 ### Subheadline
-A wearable that lets you check in—and stay.
+Over time, rings form like a tree—reflecting time spent with yourself, not scores or screens.
 
 ### Supporting Line
-Each ring forms over time, shaped by how long you stay with yourself.
+For days when you feel grounded. For days when you feel wandering. For the quiet return between the two.
 
 ## What It Is
 
@@ -25,7 +25,7 @@ Touch → Reflect → Stay
 
 - Touch your talisman
 - Receive a subtle haptic response
-- Notice whether you feel open or closed
+- Notice where you are between settled and adrift
 - Stay with yourself
 - Over time, rings form
 
@@ -57,7 +57,7 @@ A fluid reflection of your inner rhythm.
 
 - Touch check-in
 - Subtle haptic response
-- Open / closed reflection
+- Settled / adrift reflection
 - Time-based ring growth
 - Private, on-device experience
 - Natural materials
@@ -77,4 +77,3 @@ People buying meaningful gifts.
 ## Brand Line
 
 A physical reflection of time spent with yourself.
-

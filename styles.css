@@ -445,6 +445,26 @@ select {
   font-weight: 500;
 }
 
+.contact-card {
+  text-align: left;
+}
+
+.contact-email {
+  font-size: 1.05rem;
+  margin: 1rem 0 0.25rem;
+}
+
+.contact-email a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-soft);
+  color: var(--text);
+}
+
+.contact-location {
+  color: var(--muted);
+  margin: 0;
+}
+
 .is-hidden {
   display: none;
 }
@@ -1259,7 +1279,7 @@ body[data-page="talismans"].theme-light {
   --tal-gold: #9b7847;
   --tal-gold-soft: #b09164;
   --tal-border: rgba(140, 110, 66, 0.32);
-  --tal-closing-image: url("assets/mockups/Talisman Page/White Mode/moody_rustic_tabletop_with_botanical_accents.png.png");
+  --tal-closing-image: url("assets/talismans/light/moody_rustic_tabletop_with_botanical_accents.png.png");
   background:
     radial-gradient(120% 100% at 10% 0%, #efe5d6 0%, rgba(239, 229, 214, 0) 60%),
     radial-gradient(90% 100% at 90% 20%, #f3ebdf 0%, rgba(243, 235, 223, 0) 65%),

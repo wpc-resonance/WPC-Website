@@ -389,26 +389,40 @@ h3 { font-size: clamp(1.2rem, 2.2vw, 1.6rem); margin-bottom: 0.6rem; }
 
 label { font-weight: 600; color: var(--muted); }
 
-input[type="email"] {
-  width: 100%;
-  background: #111214;
-  color: var(--text);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.75rem;
-}
-
+input[type="email"],
 input[type="text"],
 input[type="tel"],
+input[type="date"],
 select,
 textarea {
   width: 100%;
-  background: #111214;
+  background: color-mix(in srgb, var(--bg-elev) 94%, white 6%);
   color: var(--text);
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--border) 78%, var(--gold-soft) 22%);
   border-radius: 10px;
   padding: 0.75rem;
   font: inherit;
+  caret-color: var(--text);
+  -webkit-text-fill-color: var(--text);
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="date"]::placeholder,
+textarea::placeholder {
+  color: color-mix(in srgb, var(--muted) 82%, white 18%);
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--gold-soft) 26%, transparent);
 }
 
 textarea {
@@ -1107,6 +1121,14 @@ body[data-page="talismans"] .tal-copy p {
   max-width: 44ch;
 }
 
+body[data-page="talismans"] .tal-copy p.tal-patent-note,
+body[data-page="talismans"] .tal-closing-inner p.tal-patent-note {
+  margin: 0.15rem 0 0;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--tal-muted) 94%, var(--tal-text) 6%);
+}
+
 body[data-page="talismans"] .tal-stacked {
   color: var(--tal-text) !important;
   line-height: 1.9;
@@ -1259,6 +1281,8 @@ body[data-page="talismans"] .waitlist-form label {
 body[data-page="talismans"] .waitlist-form input[type="email"] {
   background: #181310;
   color: #f2eadf;
+  caret-color: #f2eadf;
+  -webkit-text-fill-color: #f2eadf;
   border: 1px solid rgba(195, 157, 100, 0.42);
 }
 
@@ -1308,6 +1332,8 @@ body[data-page="talismans"].theme-light .tal-footer {
 body[data-page="talismans"].theme-light .waitlist-form input[type="email"] {
   background: #fffdfa;
   color: #2d251d;
+  caret-color: #2d251d;
+  -webkit-text-fill-color: #2d251d;
   border: 1px solid rgba(122, 93, 56, 0.48);
 }
 
